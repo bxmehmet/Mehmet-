@@ -6,7 +6,7 @@
 
 """
 
-Hi I'm Mehmet I'm student  Electric-Electronic Engineering in Kütahya Dumlupinar university. ı have couple python lesson in Uni and  I m interested
+Hi I'm Mehmet, student Electric-Electronic Engineering in Kütahya Dumlupinar university. ı have couple python lesson in Uni and  I m interested
 and start learning :)
 
 My Social Accounts:
