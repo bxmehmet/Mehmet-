@@ -15,6 +15,18 @@ def count_list(n):
             print(ary[i],"<",n)
         i+=1
     print("k value :{}".format(k))
+    
+ ###-------------------------------------------------------------------------#
+ ## short version
+ 
+ def list_1(nums):
+    count=0
+    for i in nums:
+        if i==4:
+            count+=1
+    return count
+ 
+    
         
 # Mehmet Koru 
 ##https://www.w3resource.com/python-exercises/python-basic-exercises.php
