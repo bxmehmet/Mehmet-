@@ -13,7 +13,7 @@ while len(ary)>i:
     else:
         print(ary[i],"<",n)
     i+=1
-print("k değerimiz :{}".format(k))
+print("k value :{}".format(k))
         
 # Mehmet Koru 
 ##https://www.w3resource.com/python-exercises/python-basic-exercises.php
