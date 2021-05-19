@@ -5,7 +5,7 @@
 
 # ###KULLANACAĞIM VERİ SETİ Video Games Sales data set/vgsales.csv >
 
-# ### Hocam JP_Sales kolonuna ben NaN  ile değiştirdim bazı yerleri çünkü orjinalinde yoktu Veri setinde 
+
 
 # ####TEMEL VERİ İŞLEMLERİ
 
@@ -314,27 +314,5 @@
 
 # print(f_dummy)
 # print(f)
-
-
-
-
-# print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<MEHMET KORU 201722161033<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
