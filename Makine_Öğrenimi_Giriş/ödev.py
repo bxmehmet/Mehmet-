@@ -72,7 +72,9 @@ ols raporuna göre  Play değişkeni çıkartılır
 
 X=news3.iloc[:,[0,1,2,3,6]]
 y=news3.iloc[:,[4]]
-x=np.append(arr=np.ones((14,1)).astype(int),values=X,axis=1)
+
+## y= B0+B1*x1+B2*x2+B3*x3 ....   B0 değeri ekliyoruz daha gerçekçi sonuçlar için
+x=np.append(arr=np.ones((14,1)).astype(int),values=X,axis=1) 
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.33,random_state=0)
 
 
