@@ -1,0 +1,16 @@
+Mehmet Koru  16/8/2021  23.52
+
+Python  İris Data seti üzerinde Veri bilimi Veri görselleştirme Makine öğrenmesi algoritmaları uyguladım 
+
+Veri Analizi :Kısmında amacımız  bağımlı değişkenimiz kategorik veriydi Amacımız Çiçeklerin taç yaprak çanak yaprak uzunluk genişlik gibi 4 özelliklerinden 3 çeşit Çiçek ayırımını yapmaktı.
+
+Makine Öğrenmesi Aşamasında Veri Böldük eğitim  ve test için  çeşitli algoritmalardan  Confusion Matrix hatası üzerinden en başarılı algoritmayı seçtik
+
+
+
+ufak tefek istatistik analizler görselleştirme yaptım  Beniç için Giriş Niteliğinde güzel bir çalışma oldu bu projeyi yaparken  Birçok kurs aldım kodlar çok az kısmı hazırdır (%15) yorumlar bana aittir
+
+
+Şadi Evren  - Mustafa Erginli  Teşekkürler Saygılar
+
+
