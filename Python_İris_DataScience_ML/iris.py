@@ -27,8 +27,6 @@ import warnings
 warnings.filterwarnings("ignore")
 import seaborn as sns
 %matplotlib inline
-
-
 """
 BUNLAR 2 Lİ KOMBİNASYONLA BAĞIMSIZ DEĞİŞKENLER
 
@@ -42,9 +40,7 @@ BU 3  BAĞIMSIZ DEĞİŞKENLER
 İRİS VİRGİNİCA
 İRİS VERİSOLOR
 
-
 """
-
 iris=pd.read_excel("iris.xls")
 print(iris.head()) # #ilk 5 veriye baktık
 
@@ -90,10 +86,7 @@ plt.show()
 
 ## ---------------------------------------------------------------------------------------------------------------------
 
-
 # KEMAN GRAFİĞİ  HAZIR KODLAR
-
-
 sns.set(style='whitegrid')
 plt.figure(figsize=(12,10))
 plt.subplot(2,2,1)
@@ -106,7 +99,6 @@ plt.subplot(2,2,4)
 sns.violinplot(x='iris',y='petal width',data=iris)
 plt.show()
 
-
 """
 
 Bir keman grafiği, kutu grafiğine benzer bir rol oynar. Verilerin, 
@@ -115,7 +107,6 @@ bir (veya daha fazla) kategorik değişkenin (bizim durumumuzda çiçek türleri
  verilerin noktalar halinde nerelerde yoğunlaştığı görülebilmektedir.
 
 """
-
 
 print("verimizin boyut :\n",iris.shape)
 
@@ -136,15 +127,10 @@ plt.figure(figsize=(10,11))
 sns.heatmap(iris.corr(),annot=True, cmap="coolwarm")
 plt.plot()
 
-
-
 """
 1 e yakın olan yani koyu kırmızı olanlar iyi korelasyon dur 
 
-
 """
-
-
 plt.figure(figsize=(16,9))
 plt.title('İris Çiçeği Türlerine Göre Çanak Yaprak Uzunluğu ve Genişliği Dağılımı')
 sns.scatterplot(iris['sepal length'], iris['sepal width'], hue = iris['iris'], s= 100);
@@ -153,9 +139,6 @@ sns.scatterplot(iris['sepal length'], iris['sepal width'], hue = iris['iris'], s
 plt.figure(figsize=(16,9))
 plt.title('İris Çiçeği Türlerine Göre Taç Yaprak Uzunluğu ve Genişliği Dağılımı')
 sns.scatterplot(iris['petal length'], iris['petal width'], hue = iris['iris'], s= 100);
-
-
-
 
 sns.pairplot(iris,hue="iris",height=3)
 ### burdan virginica setosa versicolar çeşitlerinin birbiniden ayırmını rahat b,irşekilde yapabilir
@@ -172,7 +155,6 @@ PAİRPLOT YORUMU:
 3- iris verginica için   sepal length  çanak yaprak uzunluğu 6-8 arasındadır  petal length  6-8 aralığındaıdr
    petal witdh 1.5 -2.5 aralığı
 
-
 """
 fig, axes = plt.subplots(2, 2, figsize=(16,9))
 axes[0,0].set_title("Çanak Yaprak Genişliği Dağılımı")
@@ -185,8 +167,6 @@ axes[1,1].set_title("Taç Yaprak Uzunluğu Dağılımı")
 axes[1,1].hist(iris['petal length'], bins=6);
 
 ### BELLİ ARALIKTA FREKANSLARI VERİR
-
-
 
 sns.FacetGrid(iris,hue="iris",height=5).map(sns.distplot,"petal width").add_legend();
 
@@ -207,10 +187,6 @@ Setosa türleri, küçük boyutlu olmasından dolayı dolayı en kolay ayırt ed
 Versicolor ve Virginica türleri genellikle karıştırılır ve bazen ayrılması zordur. Ancak genellikle Versicolor türünün boyutları daha ortalama değerdedir. Buna karşın virginica türünün boyutları daha büyüktür
 
 """
-
-
-
-
 
 ###### MAKİNE ÖĞRENMESİ
 
@@ -236,7 +212,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import  SVC  
 from sklearn import preprocessing
-
 
 #  Veri okuma, Bağımlı Bağımsız değişken çekme
 veri=pd.read_excel("iris.xls")
@@ -320,8 +295,6 @@ X_test=sc.transform(x_test)   # eğtilenden öğren ve uygula yeniden (eğitimey
   fit etmek onu eğitmek ,transofrm ise kullanmak manasına geliyor
 """
 
-
-
 #  SVM 
 
 svc=SVC(kernel="linear")  ## linear doğrusal olarak ayrım noktası bulmaya çalışacak
@@ -332,10 +305,7 @@ cm=confusion_matrix(y_test, y_pred)
 print("SVC\n",cm)
 #  linear olarak 7 yanlış 1 doğru
 
-
-
 #  SVC HATA İLE  SEÇİLEBİLECEK ALGORTİMADIR
-
 
 ###. KNN ALGORİTMASI İYİ SONUÇ VERMEDİ 2 HATA 
 # knn=KNeighborsClassifier(n_neighbors=5,metric="manhattan")
@@ -399,7 +369,6 @@ print("SVC\n",cm)
 
 # cm=confusion_matrix(y_test,y_pred)
 # print("DTC\n ",cm)
-
 
 # # =============================================================================
 # # RondomClassifier
