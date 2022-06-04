@@ -26,7 +26,7 @@ Hi ,My name is Mehmet I am twenty three years old. I live in Turkey.  I am study
  I did  Metal Case Vision Inspect Detection  Which is , Control 100 micron particle(diffrentshape and sizes) 
  -I use Cognex Deep learning camera D900 Model,  35 mm C mount lences,10 mm Extension,Barlight(x2)
  - This Project I learn how to compare processed surface and Raw aluminum surface.
- -
+ 
 At the  End;
 I want to improve myself in the Mashine Vision Systems 
  
